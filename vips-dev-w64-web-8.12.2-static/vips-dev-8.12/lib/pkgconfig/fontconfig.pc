@@ -1,0 +1,15 @@
+prefix=/data/mxe/usr/x86_64-w64-mingw32.static.posix.web
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+sysconfdir=/data/mxe/usr/x86_64-w64-mingw32.static.posix.web/etc
+localstatedir=/data/mxe/usr/x86_64-w64-mingw32.static.posix.web/var
+confdir=${sysconfdir}/fonts
+cachedir=${localstatedir}/cache/fontconfig
+
+Name: Fontconfig
+Description: Font configuration and customization library
+Version: 2.13.94
+Requires: freetype2 >=  21.0.15, expat
+Libs: -L${libdir} -lfontconfig
+Cflags: -I${includedir}

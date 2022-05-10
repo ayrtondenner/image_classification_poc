@@ -1,0 +1,9 @@
+prefix=/data/mxe/usr/x86_64-w64-mingw32.static.posix.web
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: imagequant
+Description: Image quantisation
+Version: 2.4.1
+Libs: -L${libdir} -limagequant -lm
+Cflags: -I${includedir}
